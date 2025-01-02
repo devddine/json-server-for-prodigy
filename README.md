@@ -11,7 +11,7 @@
 
 ---
 
-<p align="center"> 🌱 This repository provides a fake JSON server based on the <a href="https://github.com/typicode/json-server">json-server</a> package. It is used to simulate a product management API for testing purposes with the <b>Prodigy Manager application</b>.
+<p align="center"> 🌱 This repository provides a fake JSON server based on the <a href="https://github.com/typicode/json-server">json-server</a> package. It is used to simulate a product management API for testing purposes with the <b><a href="https://github.com/devddine/Prodigy-Manager">Prodigy Manager application</a></b>.
 </p>
 
 ## Table of Contents
