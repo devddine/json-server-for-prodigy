@@ -1,55 +1,82 @@
-<h3 align="center">Prodigy Manager</h3>
+<h3 align="center">Prodigy JSON Server</h3>
 
 <div align="center">
 
-[![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](https://img.shields.io/github/issues/devddine/Prodigy-Manager.svg)](https://github.com/devddine/Prodigy-Manager/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/devddine/Prodigy-Manager.svg)](https://github.com/devddine/Prodigy-Manager/pulls)
+[![Status](https://img.shields.io/website?url=https://devddine.github.io/Prodigy-Manager)](https://devddine.github.io/Prodigy-Manager)
+[![GitHub Issues](https://img.shields.io/github/issues/devddine/Prodigy-Manager.svg)](https://github.com/devddine/prodigy-json-server/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/devddine/Prodigy-Manager.svg)](https://github.com/devddine/prodigy-json-server/pulls)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
 </div>
 
+---
+
+<p align="center"> 🌱 This repository provides a fake JSON server based on the <a href="https://github.com/typicode/json-server">json-server</a> package. It is used to simulate a product management API for testing purposes with the <b>Prodigy Manager application</b>.
+</p>
+
 ## Table of Contents
 
-- [About](#about)
-- [Getting Started](#getting_started)
+- [Features](#features)
+- [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](../CONTRIBUTING.md)
+- [How to Use with Prodigy Manager](#how_to_use)
+- [Contributions](#contributions)
+- [License](#license)
 
-## About <a name = "about"></a>
+## 🌟 Features <a name = "features"></a>
 
-Prodigy Database is a project designed to manage and track your Prodigy data using a mock API powered by a JSON-server.
+- **Fake REST API**: Simulates a REST API with endpoints for managing product data (CRUD operations).
+- **No Configuration Needed**: The server runs using the default configuration from `json-server`.
+- **JSON Database**: Store product data in a simple JSON file.
+- **Easy Setup**: Quickly set up a local server to test the Prodigy Manager app.
 
-## Getting Started <a name = "getting_started"></a>
+## 🛠️ Installation <a name = "installation"></a>
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
+1. Clone this repository:
 
-### Prerequisites
+   ```bash
+   git clone https://github.com/devddine/prodigy-json-server.git
+   ```
 
-What things you need to install the software and how to install them.
+2. Navigate to the project directory:
 
-```
-Give examples
-```
+   ```bash
+   cd prodigy-json-server
+   ```
 
-### Installing
+3. Install the required dependencies:
 
-A step by step series of examples that tell you how to get a development env running.
+   ```bash
+   npm install
+   ```
 
-Say what the step will be
+4. Start the JSON server:
 
-```
-Give the example
-```
+   ```bash
+   npx json-server -p 3030 ./json/database.json
+   ```
 
-And repeat
+5. The server will be running at `http://localhost:3030`. You can now interact with the API and use it for testing the Prodigy Manager application.
 
-```
-until finished
-```
+## 📚 Usage <a name = "usage"></a>
 
-End with an example of getting some data out of the system or using it for a little demo.
+Once the server is running, you can:
 
-## Usage <a name = "usage"></a>
+- Access the product data via `http://localhost:3030/products`.
+- Use the endpoints to GET, POST, PUT, and DELETE product data.
 
-Add notes about how to use the system.
+## 🚀 How to Use with Prodigy Manager <a name = "how_to_use"></a>
+
+To use this fake JSON server with Prodigy Manager:
+
+1. Clone the [Prodigy Manager repository](https://github.com/devddine/Prodigy-Manager).
+2. Follow the instructions in the Prodigy Manager README to set up the app.
+3. Make sure the Prodigy Manager app points to `http://localhost:3030` for API requests.
+
+## 🤝 Contributions <a name = "contributions"></a>
+
+Feel free to contribute by submitting issues or pull requests. Your contributions are always welcome!
+
+## 📜 License <a name = "license"></a>
+
+This project is open-source and available under the MIT License. See the [LICENSE](/LICENSE) file for more information.
