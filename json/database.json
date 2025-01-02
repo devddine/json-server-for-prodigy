@@ -312,26 +312,6 @@
       "total": 438,
       "category": "tv",
       "id": "1d7f"
-    },
-    {
-      "id": "f43c",
-      "title": "fgh",
-      "price": 0,
-      "taxes": 0,
-      "ads": 0,
-      "discount": 0,
-      "total": "0",
-      "category": "fghf"
-    },
-    {
-      "id": "21dc",
-      "title": "fgh",
-      "price": 0,
-      "taxes": 0,
-      "ads": 0,
-      "discount": 0,
-      "total": "0",
-      "category": "fghf"
     }
   ]
 }
